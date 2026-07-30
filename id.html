@@ -1,8 +1,7 @@
-export function ID_SYN(syn){
+export function ID_ARC(arc){
     return {
-        mode: "sync-id",
-        identity: "Synchronisations-Operator",
-        value: syn.lock,
-        stable: syn.stable
+        mode: "archive-id",
+        identity: "Archiv-Operator",
+        last: arc.lastEcho
     };
 }
